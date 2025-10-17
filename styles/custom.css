@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 :root {
-  --color1: #FC8679;
-  --color2: #FF4946;
+  --color1: #60E900;
+  --color2: #aceb0f;
+  --color3: gray; /* FFF017 */
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  font-family: arial, helvetica, sans-serif;
 }
 #left-img {
   display: none;
@@ -118,7 +120,7 @@ section#alunos {
 }
 section#alunos h4 {
   margin-bottom: 40px;
-  color: var(--color1);
+  color: var(--color2);
   font-size: 1.6em;
   font-family: 'Geo';
 }
@@ -145,11 +147,11 @@ section#professor p {
   padding: 10px 10px 0 10px;
 }
 section#professor strong {
-  color: var(--color2);
+  color: var(--color3);
 }
 footer {
   text-align: center;
-  background-color: var(--color1);
+  background-color: var(--color3);
   height: 300px;
   color: #fff;
 }
@@ -160,7 +162,7 @@ footer a {
 }
 #chamada {
   padding: 20px;
-  background-color: var(--color1);
+  background-color: var(--color3);
 }
 #diploma {
   margin: 20px;
@@ -174,10 +176,18 @@ footer a {
   background-color: #fff;
   padding: 17px 5px 5px 5px;
   border: 2px solid #fff;
-  color: var(--color1);
+  color: var(--color3);
   height: 60px;
   width: 100px;
-  font: normal normal .8em arial, helvetica, sans-serif;
+  font: normal normal .8em arial, helvetica, @charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}sans-serif;
 }
 #chamada a:hover {
   box-shadow: 0px 0px 15px #fff;
@@ -185,7 +195,7 @@ footer a {
   transition-duration: .2s;
 }
 section#menu {
-  background-color: var(--color1);
+  background-color: var(--color3);
   padding: 20px;
 }
 section#menu ul {
@@ -198,7 +208,7 @@ section#redes h1 {
   padding: 20px 0 0 0;
 }
 section#redes {
-  background-color: var(--color1);
+  background-color: var(--color3);
 }
 #redes ul {
   padding: 10px 0 10px 0;
@@ -211,7 +221,7 @@ section#redes {
   padding: 20px 0 20px 0;
 }
 #direitos {
-  background-color: var(--color1);
+  background-color: var(--color3);
   height: 70px;
   text-align: center;
   display: flex;
