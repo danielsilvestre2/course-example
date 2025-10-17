@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --color1: #31d482;
-  --color2: #0085BA;
-  --color3: #31d4be;
+  --color1: #FC8679;
+  --color2: #FFA166;
 }
 
 * {
@@ -28,7 +27,7 @@
 }
 @media screen and (min-width: 481px) and (max-width: 766px) {
   header {
-   height: 30px;
+   height: 60px;
     border-bottom: 2px solid white;
   }
   header#menu {
@@ -39,12 +38,15 @@
   }
   section#inicio img {
     width: 400px;
-    border-radius: 0 0 60% 7% / 0 0 20% 90%;
+    border-radius: 0 0 36% 36%;
   }
   #chamada a {
     padding-top: 15px;
     width: 120px;
     height: 60px;
+  }
+  .main {
+    margin: 20px 90px 60px 90px
   }
 }
 @media screen and (min-width: 767px) {
@@ -73,9 +75,14 @@
     height: 60px;
   }
   .main {
-    display: flex;
+    margin: 10px 190px 60px 190px;
   }
-  #left-img {
-    display: block;
+  main.politica-m {
+    margin: 10px 120px 60px 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    margin: 20px 30vw 60px 30vw;
   }
 }

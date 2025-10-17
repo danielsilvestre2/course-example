@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --color1: #31d482;
-  --color2: #0085BA;
-  --color3: #31d4be;
+  --color1: #FC8679;
+  --color2: #FF4946;
 }
 
 @font-face {
@@ -19,13 +18,6 @@
 }
 #left-img {
   display: none;
-}
-div#grad {
-  width: 100%;
-  height: 80px;
-  margin-top: -40px;
-  background-image: linear-gradient(to bottom,
-  whitesmoke, var(--color2));
 }
 span.lat-roll {
   color: lightgray;
@@ -72,6 +64,7 @@ header span#logo {
 }
 header img#menu:hover {
   transform: rotate(90deg) scale(1.2);
+  transition-duration: .2s;
 }
 section#inicio {
   color: #fff;
@@ -86,7 +79,8 @@ section#inicio h1 {
 }
 section#inicio img {
   width: 100%;
-  margin: 20px auto -19.5px auto;
+  border-radius: 0 0 36% 36%;
+  margin: 20px auto -22px auto;
 }
 section#sobre {
   text-align: center;
@@ -101,7 +95,7 @@ section#sobre p, h1 {
 section#aprender {
   margin: 50px 0px 50px 0px;
   padding: 20px;
-  background-color: var(--color3);
+  background-color: var(--color2);
   color: #fff;
 }
 section#aprender li {
@@ -125,7 +119,7 @@ section#alunos {
 }
 section#alunos h4 {
   margin-bottom: 40px;
-  color: var(--color3);
+  color: var(--color1);
   font-size: 1.6em;
   text-decoration-thickness: 2px;
   font-family: 'Geo';
@@ -135,13 +129,13 @@ section#alunos img {
   border-radius: 50%;
 }
 section#alunos img:hover {
-  box-shadow: 0px 0px 15px var(--color2);
+  box-shadow: 0px 0px 15px var(--color1);
 }
 section#professor {
   display: flex;
   align-items: center;
   height: 300px;
-  margin: 40px 0 40px 0;
+  margin: 40px 0 0 0;
   background-color: whitesmoke;
   border-radius: 5px;
 }
@@ -157,7 +151,7 @@ section#professor strong {
 }
 footer {
   text-align: center;
-  background-color: var(--color2);
+  background-color: var(--color1);
   height: 300px;
   color: #fff;
 }
@@ -166,25 +160,34 @@ footer a {
   color: #fff;
   font-weight: bold;
 }
+#chamada {
+  padding: 20px;
+  background-color: var(--color1);
+}
+#diploma {
+  margin: 20px;
+  box-shadow: 0 0 50px white;
+}
 #chamada a {
   text-align: center;
   border-radius: 30px;
   display: block;
   margin: 20px auto 20px auto;
   background-color: #fff;
-  padding: 10px 5px 5px 5px;
+  padding: 20px 5px 5px 5px;
   border: 2px solid #fff;
-  color: var(--color2);
-  height: 40px;
-  width: 90px;
+  color: var(--color1);
+  height: 60px;
+  width: 100px;
   font-weight: normal;
 }
 #chamada a:hover {
   box-shadow: 0px 0px 15px #fff;
   transform: scale(1.2);
+  transition-duration: .2s;
 }
 section#menu {
-  background-color: var(--color2);
+  background-color: var(--color1);
   padding: 20px;
 }
 section#menu ul {
@@ -197,7 +200,7 @@ section#redes h1 {
   padding: 20px 0 0 0;
 }
 section#redes {
-  background-color: var(--color2);
+  background-color: var(--color1);
 }
 #redes ul {
   padding: 10px 0 10px 0;
@@ -210,7 +213,7 @@ section#redes {
   padding: 20px 0 20px 0;
 }
 #direitos {
-  background-color: var(--color2);
+  background-color: var(--color1);
   height: 70px;
   text-align: center;
   display: flex;
@@ -235,7 +238,6 @@ hr {
   border: 1px solid white;
   margin: auto;
 }
-
 /* cadatro.html */
 .body {
   background-color: whitesmoke;
@@ -258,7 +260,7 @@ form #p-head {
   color: gray;
 }
 form #terms {
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
   padding: 20px 60px 20px 60px;
 }
@@ -323,9 +325,10 @@ form input[type="checkbox"]:after {
 }
 form input[type="submit"] {
   display: block;
+  padding: 3px 0 0 0;
   margin: 20px auto 20px auto;
-  height: 35px;
-  width: 80%;
+  height: 50px;
+  width: 90%;
   border: 1.5px solid var(--color1);
   border-radius: 10px;
   background-color: transparent;
@@ -334,7 +337,8 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   color: white;
   border: 1px solid var(--color1);
-  box-shadow: inset 0 -35px 0 var(--color1);
+  box-shadow: inset 0 -55px 0 var(--color1);
+  transition-duration: .2s;
 }
 form #redes-log ul {
   padding: 10px 0 -60px 0;
@@ -349,40 +353,40 @@ form #redes-log p {
   text-align: center;
 }
 form #redes-log img:hover {
-  filter: drop-shadow(0 0 5px var(--color3));
+  filter: drop-shadow(0 0 5px var(--color1));
+  transition-duration: .2s;
 }
 form #redes-log a {
   text-decoration: none;
 }
 form #log-bt a {
   text-align: center;
-  padding: 4px 0 0 0;
+  padding: 15px 0 0 0;
   align-items: center;
   text-decoration: none;
   display: block;
   margin: 20px auto 20px auto;
-  height: 35px;
-  width: 50%;
+  height: 50px;
+  width: 90%;
   border: 1.5px solid var(--color1);
   border-radius: 10px;
   background-color: var(--color1);
   color: white;
 }
 form #log-bt a:hover {
-  box-shadow: inset 0 -35px 0 white;
+  box-shadow: inset 0 55px 0 white;
   color: var(--color1);
   border: 1.5px solid var(--color1);
+  transition-duration: .2s;
 }
 form #log-bt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 form #log-bt p {
   padding: 0 0 0 20px;
   text-align: center;
   color: gray;
-  font-size: .7em;
+  font-size: .9em;
 }
 form #log-bt span {
   font-size: 3em;
@@ -391,7 +395,7 @@ form #log-bt span {
 form #forgot-pass {
   padding: 0 20px 0 0;
   margin-top: 2px;
-  color: var(--color3);
+  color: var(--color2);
   font-size: .8em;
   text-decoration: none;
 }
@@ -403,3 +407,54 @@ div#btns {
   justify-content: space-between;
   margin-bottom: -15px;
 }
+/* Politica de Privacidade */
+div#circles span {
+  font-size: 2em;
+  color: var(--color2);
+}
+main.politica-m hr {
+ background-color: var(--color1);
+}
+body.politica-b {
+  background-color: whitesmoke;
+}
+main.politica-m {
+  margin: 40px 0 90px 0;
+  border-top: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
+  border-radius: 30px;
+  background-color: white;
+  padding: 30px;
+}
+main.politica-m h1 {
+  font-size: 3em;
+}
+main.politica-m h2 {
+  font-size: 2em;
+}
+main.politica-m h3 {
+  font-size: 1.5em;
+}
+main.politica-m p {
+  padding: 10px;
+}
+main.politica-m ul, ol li {
+  padding: 20px 20px 20px 0px;
+  margin: 0 0 0 60px;
+}
+main.politica-m span {
+  color: var(--color1);
+}
+main.politica-m ol {
+  list-style-type: none;
+}
+#data:before {
+  content: '\2014';
+  font-size: .9em;
+}
+#data {
+  padding-left: 20px;
+  font-size: .9em;
+  color: gray;
+}
+/* precos */
