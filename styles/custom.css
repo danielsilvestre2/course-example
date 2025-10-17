@@ -26,7 +26,7 @@ span.lat-roll {
   margin: 5px;
 }
 span.lat-roll-g {
-  color: var(--color3);
+  color: black;
   font-size: 1.5em;
   border-radius: 100%;
   margin: 5px;
@@ -107,8 +107,7 @@ section#aprender h3 {
   font: normal bolder 1.6em arial, helvetica, sans-serif;
 }
 #aprender li::before {
-  font: normal normal 2em arial, helvetica,
-  sans-serif;
+  font: normal normal 2em arial, helvetica, sans-serif;
   content: "\2713";
   padding-right: 5px;
 }
@@ -121,7 +120,6 @@ section#alunos h4 {
   margin-bottom: 40px;
   color: var(--color1);
   font-size: 1.6em;
-  text-decoration-thickness: 2px;
   font-family: 'Geo';
 }
 section#alunos img {
@@ -265,7 +263,7 @@ form #terms {
   padding: 20px 60px 20px 60px;
 }
 form #terms a {
-  color: var(--color3);
+  color: var(--color2);
 }
 form input[type="email"],
 input[type="password"],
