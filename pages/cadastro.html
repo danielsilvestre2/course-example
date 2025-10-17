@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/custom.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastro | Cursgraph</title>
+</head>
+<body class="body">
+  <header>
+  <span id="logo">CG</span>
+  <img id="menu" src="../images/menu.svg" alt="Abrir Menu">
+  </header>
+  <main class="main">
+  <form action="cadastro.php" method="post">
+  <h1>Conheça O Mundo ao Seu Redor!</h1>
+  <p id="p-head">Crie sua Conta e Comece a Aprender</p>
+  <input required type="text" name="Name" id="nam" placeholder="Nome Completo">
+  <input required type="email" name="Email" id="mail" placeholder="Email">
+  <div id="showpassword">
+  <label for="showpwd">Mostrar Senha</label>
+  <input type="checkbox" name="showpwd" id="showpass" onclick="pass.type = this.checked ? 'text' : 'Password'">
+  </div>
+  <input required type="password" name="Password" id="pass" placeholder="Senha">
+  <hr>
+  <input type="submit" value="Criar">
+  <div id="redes-log">
+  <p>Ou</p>
+  <ul>
+    <li><img width="40" height="40" src="../images/facebook-round.svg" alt="Logar com Facebook"><a href="#"></a></li>
+    <li><img width="30" height="30" src="../images/google-round.svg" alt="Logar com Goolge"><a href="#"></a></li>
+    <li><img width="40" height="40" src="../images/instagram-round.svg" alt="Logar com Instagram"><a href="#"></a></li>
+  </ul>
+  </div>
+  </div>
+  <div id="terms">
+  <p>Ao continuar Você Concorda com os <a
+  href="termos.html" target="_blank">termos de Privacidade</a></p>
+  </div>
+  <div id="log-bt">
+  <p>Já Possui uma Conta? <span>&rarr;</span></p>
+  <a href="login.html" target="prev">Entrar</a>
+  </div>
+  </form>
+  </main>
+  <div id="grad"></div>
+  <footer>
+  <section id="menu">
+  <h1>Menu</h1>
+  <ul>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="">Sobre</a></li>
+  <li><a href="termos.html">Termos</a></li>
+  <li><a href="">Preços</a></li>
+  </ul>
+  </section>
+  <hr>
+  <section id="redes">
+  <h1>Nossas Redes</h1>
+  <ul>
+  <li id="linkd"><img src="../images/linkedin.svg" alt="acessar linkedin"></li>
+  <li id="inst"><img src="../images/instagram.svg" alt="acessar instagram"></li>
+  <li id="x"><img src="../images/x.svg" alt="acessar x"></li>
+  </ul>
+  </section>
+  <hr>
+  <section id="direitos">
+  <p>Todos os Direitos Reservados <a href="#">© Cursgraph</a> 2025</p>
+  </section>
+  </footer>
+</body>
+</html>
