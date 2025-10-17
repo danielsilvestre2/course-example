@@ -1,0 +1,405 @@
+@charset "UTF-8";
+
+:root {
+  --color1: #31d482;
+  --color2: #0085BA;
+  --color3: #31d4be;
+}
+
+@font-face {
+  font-family: 'Geo';
+  src: url('../fonts/GeosansLight.ttf') format('truetype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+#left-img {
+  display: none;
+}
+div#grad {
+  width: 100%;
+  height: 80px;
+  margin-top: -40px;
+  background-image: linear-gradient(to bottom,
+  whitesmoke, var(--color2));
+}
+span.lat-roll {
+  color: lightgray;
+  font-size: 1.5em;
+  border-radius: 100%;
+  margin: 5px;
+}
+span.lat-roll-g {
+  color: var(--color3);
+  font-size: 1.5em;
+  border-radius: 100%;
+  margin: 5px;
+}
+body {
+  background-color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 20px;
+  background-color: var(--color1);
+}
+header img#menu {
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  height: 33px;
+  margin: 12px;
+  padding: 5px;
+}
+header span#logo {
+  padding-top: 7px;
+  text-align: center;
+  color: var(--color1);
+  margin: 13px;
+  height: 30px;
+  width: 60px;
+  background-color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+header img#menu:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+section#inicio {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 36% 36%;
+  margin: 0 0 20px 0;
+  background-color: var(--color1);
+}
+section#inicio h1 {
+  font: normal bolder 3.4em arial, sans-serif, helvetica;
+}
+section#inicio img {
+  width: 100%;
+  margin: 20px auto -19.5px auto;
+}
+section#sobre {
+  text-align: center;
+  letter-spacing: .5px;
+  margin: 40px 20px 40px 20px;
+  padding: 20px;
+  color: gray;
+}
+section#sobre p, h1 {
+  padding: 10px;
+}
+section#aprender {
+  margin: 50px 0px 50px 0px;
+  padding: 20px;
+  background-color: var(--color3);
+  color: #fff;
+}
+section#aprender li {
+  line-height: 3em;
+  list-style-type: none;
+}
+section#aprender h3 {
+  padding: 10px 0 30px 0;
+  font: normal bolder 1.6em arial, helvetica, sans-serif;
+}
+#aprender li::before {
+  font: normal normal 2em arial, helvetica,
+  sans-serif;
+  content: "\2713";
+  padding-right: 5px;
+}
+section#alunos {
+  margin: 40px 40px 0 40px;
+  padding: 10px;
+  text-align: center;
+}
+section#alunos h4 {
+  margin-bottom: 40px;
+  color: var(--color3);
+  font-size: 1.6em;
+  text-decoration-thickness: 2px;
+  font-family: 'Geo';
+}
+section#alunos img {
+  margin: auto;
+  border-radius: 50%;
+}
+section#alunos img:hover {
+  box-shadow: 0px 0px 15px var(--color2);
+}
+section#professor {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  margin: 40px 0 40px 0;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+section#professor img {
+  border-radius: 50%;
+  padding: 10px;
+}
+section#professor p {
+  padding: 10px 10px 0 10px;
+}
+section#professor strong {
+  color: var(--color2);
+}
+footer {
+  text-align: center;
+  background-color: var(--color2);
+  height: 300px;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+#chamada a {
+  text-align: center;
+  border-radius: 30px;
+  display: block;
+  margin: 20px auto 20px auto;
+  background-color: #fff;
+  padding: 10px 5px 5px 5px;
+  border: 2px solid #fff;
+  color: var(--color2);
+  height: 40px;
+  width: 90px;
+  font-weight: normal;
+}
+#chamada a:hover {
+  box-shadow: 0px 0px 15px #fff;
+  transform: scale(1.2);
+}
+section#menu {
+  background-color: var(--color2);
+  padding: 20px;
+}
+section#menu ul {
+  list-style-type: none;
+}
+section#menu li {
+  line-height: 2em;
+}
+section#redes h1 {
+  padding: 20px 0 0 0;
+}
+section#redes {
+  background-color: var(--color2);
+}
+#redes ul {
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+#redes li {
+  padding: 20px 0 20px 0;
+}
+#direitos {
+  background-color: var(--color2);
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#linkd:hover::after {
+  content: "Linkedin";
+  padding: 0 0 0 5px;
+}
+#inst:hover::after {
+  content: "Instagram";
+  padding: 0 0 0 5px;
+}
+#x:hover::after {
+  content: "X";
+  padding: 0 0 0 5px;
+}
+hr {
+  height: 1px;
+  background-color: white;
+  border: 1px solid white;
+  margin: auto;
+}
+
+/* cadatro.html */
+.body {
+  background-color: whitesmoke;
+}
+.main {
+  margin: 20px 20px 80px 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+form h1 {
+  text-align: center;
+  padding: 20px 0 0 20px;
+  color: var(--color1);
+  font-family: 'Geo';
+}
+form #p-head {
+  text-align: center;
+  padding: 20px 0 30px 20px;
+  color: gray;
+}
+form #terms {
+  font-size: .8em;
+  text-align: center;
+  padding: 20px 60px 20px 60px;
+}
+form #terms a {
+  color: var(--color3);
+}
+form input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 10px;
+  width: 91%;
+  margin: 30px auto 30px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid gray;
+}
+form input:focus-within {
+  outline: none;
+}
+#showpassword {
+  display: flex;
+  justify-items: flex-end;
+}
+#showpassword label[for="showpwd"] {
+  font-size: .8em;
+  color: gray;
+  margin: 0 0 0 20px;
+}
+#showpassword input[type="checkbox"] {
+  appearance: none;
+  border: 1.5px solid gray;
+  padding: 0 3px 0 3px;
+  border-radius: 50%;
+  margin: -5px 0 5px 5px;
+}
+#showpassword input[type="checkbox"]:checked {
+  border: 1.5px solid var(--color1);
+  background-color: var(--color1);
+}
+#check-box label[for="showpwd"] {
+  font-size: .8em;
+  color: gray;
+  margin: 0 0 0 20px;
+}
+div#check-box input[type="checkbox"] {
+  appearance: none;
+  border: 1.5px solid gray;
+  padding: 0px 3px 0 3px;
+  border-radius: 50%;
+  margin: 0 0 15px 2px;
+}
+div#check-box input[type="checkbox"]:checked {
+  border: 1.5px solid var(--color1);
+  background-color: var(--color1);
+}
+
+form input[type="checkbox"]:after {
+  color: white;
+  content: '\2713';
+}
+form input[type="submit"] {
+  display: block;
+  margin: 20px auto 20px auto;
+  height: 35px;
+  width: 80%;
+  border: 1.5px solid var(--color1);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--color1);
+}
+form input[type="submit"]:hover {
+  color: white;
+  border: 1px solid var(--color1);
+  box-shadow: inset 0 -35px 0 var(--color1);
+}
+form #redes-log ul {
+  padding: 10px 0 -60px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+form #redes-log p {
+  padding: 0 0 10px 0;
+  text-align: center;
+}
+form #redes-log img:hover {
+  filter: drop-shadow(0 0 5px var(--color3));
+}
+form #redes-log a {
+  text-decoration: none;
+}
+form #log-bt a {
+  text-align: center;
+  padding: 4px 0 0 0;
+  align-items: center;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto 20px auto;
+  height: 35px;
+  width: 50%;
+  border: 1.5px solid var(--color1);
+  border-radius: 10px;
+  background-color: var(--color1);
+  color: white;
+}
+form #log-bt a:hover {
+  box-shadow: inset 0 -35px 0 white;
+  color: var(--color1);
+  border: 1.5px solid var(--color1);
+}
+form #log-bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form #log-bt p {
+  padding: 0 0 0 20px;
+  text-align: center;
+  color: gray;
+  font-size: .7em;
+}
+form #log-bt span {
+  font-size: 3em;
+}
+/* Login */ 
+form #forgot-pass {
+  padding: 0 20px 0 0;
+  margin-top: 2px;
+  color: var(--color3);
+  font-size: .8em;
+  text-decoration: none;
+}
+form input[type="password"] {
+  margin: 0 auto 40px auto;
+}
+div#btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -15px;
+}
