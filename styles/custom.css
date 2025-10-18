@@ -20,15 +20,15 @@
 }
 span.lat-roll {
   color: lightgray;
-  font-size: 1.5em;
+  font-size: 1em;
   border-radius: 100%;
-  margin: 5px;
+  margin: 10px;
 }
 span.lat-roll-g {
   color: black;
-  font-size: 1.5em;
+  font-size: 1em;
   border-radius: 100%;
-  margin: 5px;
+  margin: 10px;
 }
 body {
   background-color: #fff;
@@ -523,11 +523,11 @@ div#curso1 li:before {
   transition-duration: .2s;
 }
 #bt-left:hover {
-  box-shadow: inset 150px 0 0 var(--color2);
+  box-shadow: inset 170px 0 0 var(--color2);
   transition-duration: .2s;
 }
 #bt-right:hover {
-  box-shadow: inset -150px 0 0 var(--color2);
+  box-shadow: inset -170px 0 0 var(--color2);
   transition-duration: .2s;
 }
  /* Sobre */
