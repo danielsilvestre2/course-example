@@ -99,6 +99,26 @@
   .main {
     margin: 20px 30vw 60px 30vw;
   }
+  section#inicio {
+    border-radius: 0 0 12% 12%;
+  }
+  section#inicio img {
+    border-radius: 0 0 18% 12%;
+    margin-bottom: -20.9px;
+    width: 60%;
+  }
+  section#inicio h1 {
+    font-size: 5vw;
+  }
+  section#sobre h2 {
+    font-size: 3vw;
+  }
+  section#aprender h2 {
+    font-size: 3vw;
+  }
+  section#alunos h3 {
+    font-size: 2vw;
+  }
   .about h1 {
     display: flex;
     justify-content: center;
