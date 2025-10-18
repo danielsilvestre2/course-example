@@ -81,9 +81,36 @@
   main.politica-m {
     margin: 10px 120px 60px 120px;
   }
+  .about h1:before {
+    content: none;
+  }
+  .about h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25vw;
+    font-size: 9vw;
+  }
+  .about h2.course {
+    margin-top: 120px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .main {
     margin: 20px 30vw 60px 30vw;
+  }
+  .about h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20vw;
+    font-size: 9vw;
+  }
+  .about h2.course {
+    margin-top: 18vw;
+  }
+  .about {
+    font-size: 1.4vw;
+    line-height: 1.7vw;
   }
 }

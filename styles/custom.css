@@ -51,6 +51,8 @@ header img#menu {
   height: 33px;
   margin: 12px;
   padding: 5px;
+  cursor: pointer;
+  transition-duration: .2s;
 }
 header span#logo {
   padding-top: 4px;
@@ -121,14 +123,11 @@ section#alunos h4 {
   margin-bottom: 40px;
   color: var(--color2);
   font-size: 1.6em;
-  font-family: 'Geo';
+  font-family: 'Geo', helvetica, sans-serif;
 }
 section#alunos img {
   margin: auto;
   border-radius: 50%;
-}
-section#alunos img:hover {
-  box-shadow: 0px 0px 15px var(--color1);
 }
 section#professor {
   display: flex;
@@ -173,20 +172,14 @@ footer a {
   display: block;
   margin: 20px auto 20px auto;
   background-color: #fff;
-  padding: 17px 5px 5px 5px;
+  padding: 18px 5px 5px 5px;
   border: 2px solid #fff;
   color: var(--color3);
   height: 60px;
   width: 100px;
-  font: normal normal .8em arial, helvetica, @charset "UTF-8";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  -webkit-tap-highlight-color: transparent;
-}sans-serif;
+  font: normal bold .9em arial, helvetica, sans-serif;
+  cursor: pointer;
+  transition-duration: .2s;
 }
 #chamada a:hover {
   box-shadow: 0px 10px 5px #0000003e;
@@ -218,6 +211,7 @@ section#redes {
 }
 #redes li {
   padding: 20px 0 20px 0;
+  cursor: pointer;
 }
 #direitos {
   background-color: var(--color3);
@@ -260,7 +254,7 @@ form h1 {
   text-align: center;
   padding: 20px 0 0 20px;
   color: var(--color1);
-  font-family: 'Geo';
+  font-family: 'Geo', helvetica, sans-serif;
 }
 form #p-head {
   text-align: center;
@@ -341,6 +335,8 @@ form input[type="submit"] {
   border-radius: 10px;
   background-color: transparent;
   color: var(--color1);
+  cursor: pointer;
+  transition-duration: .2s;
 }
 form input[type="submit"]:hover {
   color: white;
@@ -359,6 +355,10 @@ form #redes-log ul {
 form #redes-log p {
   padding: 0 0 10px 0;
   text-align: center;
+}
+form #redes-log img {
+  cursor: pointer;
+  transition-duration: .2s;
 }
 form #redes-log img:hover {
   filter: drop-shadow(0 0 5px var(--color1));
@@ -380,6 +380,8 @@ form #log-bt a {
   border-radius: 10px;
   background-color: var(--color1);
   color: white;
+  cursor: pointer;
+  transition-duration: .2s;
 }
 form #log-bt a:hover {
   box-shadow: inset 0 55px 0 white;
@@ -467,7 +469,8 @@ main.politica-m ol {
 }
 /* Cursos */
 div#curso1 h1 {
-  font-family: 'Geo';
+  font-family: 'Geo', helvetica, sans-serif;
+  color: var(--color1);
 }
 div#curso1 img {
   display: block;
@@ -500,20 +503,70 @@ div#curso1 li:before {
 #bt-right {
   color: white;
   background-color: var(--color1);
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
   width: 40%;
   height: 30px;
   padding-bottom: 40px;
   font-size: 1.6em;
+  transition-duration: .2s;
 }
 #bt-left {
   color: white;
   background-color: var(--color1);
-  border-radius: 10px;
   border: none;
+  border-radius: 10px;
   width: 40%;
   height: 30px;
   padding-bottom: 40px;
   font-size: 1.6em;
+  transition-duration: .2s;
+}
+#bt-left:hover {
+  box-shadow: inset 150px 0 0 var(--color2);
+  transition-duration: .2s;
+}
+#bt-right:hover {
+  box-shadow: inset -150px 0 0 var(--color2);
+  transition-duration: .2s;
+}
+ /* Sobre */
+.about {
+  margin-bottom: 30px;
+}
+.about h1:before {
+  content: url('../images/globe-stand.svg');
+  padding-right: 10px;
+}
+.about h1 {
+  font-family: 'Geo', helvetica, sans-serif;
+  color: white;
+  margin-top: -120px;
+  font-size: 2.4em;
+}
+.about h2 {
+  margin-top: 60px;
+  font-size: 1.7em;
+}
+.about p, h2 {
+  padding: 15px 20px 15px 20px;
+  line-height: 1.3em;
+}
+picture img {
+  margin: 20px 0 10px 0;
+  height: 35vw;
+  width: 100%;
+}
+.course:after {
+  font-size: .7em;
+  padding: 0 10px 0 10px;
+  content: url('../images/graduation-cap.svg');
+}
+.classroom:after {
+  font-size: .7em;
+  padding: 0 10px 0 10px;
+  content: url('../images/book-bookmark.svg');
+}
+h2.classroom {
+  margin-top: -5px;
 }
