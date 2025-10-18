@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-  --color1: #60E900;
-  --color2: #aceb0f;
-  --color3: gray; /* FFF017 */
+  --color1: #5C9E2D;
+  --color2: #95B23C;
+  --color3: gray;
 }
 
 @font-face {
@@ -17,9 +17,6 @@
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
   font-family: arial, helvetica, sans-serif;
-}
-#left-img {
-  display: none;
 }
 span.lat-roll {
   color: lightgray;
@@ -37,17 +34,19 @@ body {
   background-color: #fff;
 }
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #fff;
-  color: #fff;
+  color: gray;
   width: 100%;
   height: 60px;
   padding-bottom: 20px;
-  background-color: var(--color1);
+  background-color: #fff;
+  filter: drop-shadow(0 5px 5px #00000033);
 }
 header img#menu {
-  border: 1.5px solid #fff;
+  border: 1.5px solid gray;
   border-radius: 50%;
   height: 33px;
   margin: 12px;
@@ -56,11 +55,11 @@ header img#menu {
 header span#logo {
   padding-top: 4px;
   text-align: center;
-  color: var(--color1);
+  color: #fff;
   margin: 13px;
   height: 30px;
   width: 60px;
-  background-color: #fff;
+  background-color: gray;
   border: none;
   border-radius: 3px;
 }
@@ -73,7 +72,7 @@ section#inicio {
   padding: 20px;
   text-align: center;
   border-radius: 0 0 36% 36%;
-  margin: 0 0 20px 0;
+  margin: 0 0 60px 0;
   background-color: var(--color1);
 }
 section#inicio h1 {
@@ -87,7 +86,7 @@ section#inicio img {
 section#sobre {
   text-align: center;
   letter-spacing: .5px;
-  margin: 40px 20px 40px 20px;
+  margin: 40px 20px 60px 20px;
   padding: 20px;
   color: gray;
 }
@@ -135,7 +134,7 @@ section#professor {
   display: flex;
   align-items: center;
   height: 300px;
-  margin: 40px 0 0 0;
+  margin: 40px 0 60px 0;
   background-color: whitesmoke;
   border-radius: 5px;
 }
@@ -190,7 +189,7 @@ footer a {
 }sans-serif;
 }
 #chamada a:hover {
-  box-shadow: 0px 0px 15px #fff;
+  box-shadow: 0px 10px 5px #0000003e;
   transform: scale(1.2);
   transition-duration: .2s;
 }
@@ -255,6 +254,7 @@ hr {
   padding: 10px;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 0px 5px 5px #00000033;
 }
 form h1 {
   text-align: center;
@@ -465,4 +465,55 @@ main.politica-m ol {
   font-size: .9em;
   color: gray;
 }
-/* precos */
+/* Cursos */
+div#curso1 h1 {
+  font-family: 'Geo';
+}
+div#curso1 img {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+div#curso1 p, h1, li {
+  padding: 10px;
+}
+div#curso1 li {
+  text-decoration: none;
+  list-style-type: none;
+  line-height: .5em;
+  font: normal 300 .9em arial, helvetica, sans-serif;
+}
+div#curso1 li:before {
+  font-size: 1.5em;
+  content: '\2713';
+  padding-right: 5px;
+  color: var(--color2);
+}
+#btns-curs {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+#bt-right {
+  color: white;
+  background-color: var(--color1);
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+  height: 30px;
+  padding-bottom: 40px;
+  font-size: 1.6em;
+}
+#bt-left {
+  color: white;
+  background-color: var(--color1);
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+  height: 30px;
+  padding-bottom: 40px;
+  font-size: 1.6em;
+}
