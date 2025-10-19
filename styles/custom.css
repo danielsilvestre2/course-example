@@ -45,7 +45,7 @@ header {
   background-color: #fff;
   filter: drop-shadow(0 5px 5px #00000033);
 }
-header img#menu {
+img#menu {
   border: 1.5px solid gray;
   border-radius: 50%;
   height: 33px;
@@ -53,6 +53,22 @@ header img#menu {
   padding: 5px;
   cursor: pointer;
   transition-duration: .2s;
+}
+div#menu {
+  display: block;
+}
+div#menu {
+  padding: 10px;
+  display: none;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+div#menu a {
+  text-decoration: none;
+  color: gray;
+}
+div#menu a:hover {
+  text-decoration: underline;
 }
 header span#logo {
   padding-top: 4px;
