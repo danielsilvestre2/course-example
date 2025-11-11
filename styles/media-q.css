@@ -75,6 +75,16 @@
     width: 120px;
     height: 60px;
   }
+  form input[type="submit"],
+  #log-bt a {
+    border: 3px solid var(--color1);
+    font-weight: bold;
+  }
+  form input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    border-bottom: 2.5px solid gray;
+  }
   .main {
     margin: 10px 190px 60px 190px;
   }
