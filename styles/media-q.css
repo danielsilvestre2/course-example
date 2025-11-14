@@ -29,7 +29,7 @@
 @media screen and (min-width: 481px) and (max-width: 766px) {
   header {
    height: 60px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
   }
   header#menu {
     border: none;
@@ -52,7 +52,7 @@
 }
 @media screen and (min-width: 767px) {
   header {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #fff;
   }
   p strong a {
     font-size: 9vw;
@@ -83,7 +83,7 @@
   form input[type="email"],
   input[type="password"],
   input[type="text"] {
-    border-bottom: 2.5px solid gray;
+    border-bottom: 2.5px solid #999;
   }
   .main {
     margin: 10px 190px 60px 190px;
@@ -109,12 +109,11 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .indx-main {
-  width: calc(100% - 100px);
-  margin: 0 50px;
+  header {
+    padding: 8px 40px 8px 40px;
   }
-  .main {
-    margin: 20px 30vw 60px 30vw;
+  section#inicio {
+    margin: 0 40px 0 40px;
   }
   img#menu {
     display: none;

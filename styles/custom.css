@@ -25,13 +25,13 @@ main {
   text-align: justify;
 }
 span.lat-roll {
-  color: lightgray;
+  color: #ddd;
   font-size: 1em;
   border-radius: 100%;
   margin: 10px;
 }
 span.lat-roll-g {
-  color: black;
+  color: #000;
   font-size: 1em;
   border-radius: 100%;
   margin: 10px;
@@ -44,7 +44,7 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  color: gray;
+  color: #333;
   width: 100%;
   height: 50px;
   padding: 8px;
@@ -60,12 +60,12 @@ header span#logo {
   color: #fff;
   height: 30px;
   width: 60px;
-  background-color: gray;
+  background-color: #333;
   border: none;
   border-radius: 3px;
 }
 img#menu {
-  border: 1.5px solid gray;
+  border: 1.5px solid #333;
   border-radius: 50%;
   height: 33px;
   padding: 5px;
@@ -86,7 +86,7 @@ div#menu {
 }
 div#menu a {
   text-decoration: none;
-  color: gray;
+  color: #333;
 }
 div#menu a:hover {
   text-decoration: underline;
@@ -112,7 +112,7 @@ section#sobre {
   letter-spacing: .5px;
   margin: 40px 20px 60px 20px;
   padding: 20px;
-  color: gray;
+  color: #333;
 }
 section#sobre p, h2 {
   padding: 10px;
@@ -156,7 +156,7 @@ section#professor {
   align-items: center;
   height: 300px;
   margin: 40px 0 60px 0;
-  background-color: whitesmoke;
+  background-color: #eee;
   border-radius: 5px;
 }
 section#professor img {
@@ -186,7 +186,7 @@ footer a {
 }
 #diploma {
   margin: 20px;
-  box-shadow: 0 0 50px white;
+  box-shadow: 0 0 50px #fff;
 }
 #chamada a {
   text-align: center;
@@ -260,19 +260,19 @@ section#redes {
 }
 hr {
   height: 1px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: #fff;
+  border: 1px solid #fff;
   margin: auto;
 }
 /* cadatro.html */
 .body {
-  background-color: whitesmoke;
+  background-color: #fff;
 }
 .main {
   margin: 20px 20px 80px 20px;
   padding: 10px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0px 5px 5px #00000033;
 }
 form h1 {
@@ -284,7 +284,7 @@ form h1 {
 form #p-head {
   text-align: center;
   padding: 20px 0 30px 20px;
-  color: gray;
+  color: #999;
 }
 form #terms {
   font-size: .9em;
@@ -305,7 +305,7 @@ input[type="text"] {
   border-radius: 10px;
   border: none;
   background-color: #f0f0f0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #333;
 }
 form input:focus-within {
   outline: none;
@@ -327,7 +327,7 @@ form input[type="submit"] {
   transition-duration: .2s;
 }
 form input[type="submit"]:hover {
-  color: white;
+  color: #fff;
   border: 1px solid var(--color1);
   box-shadow: inset 0 -55px 0 var(--color1);
   transition-duration: .2s;
@@ -338,12 +338,12 @@ form input[type="submit"]:hover {
 }
 #showpassword label[for="showpwd"] {
   font-size: .8em;
-  color: gray;
+  color: #333;
   margin: 0 0 0 20px;
 }
 #showpassword input[type="checkbox"] {
   appearance: none;
-  border: 1.5px solid gray;
+  border: 1.5px solid #333;
   padding: 0 3px 0 3px;
   border-radius: 50%;
   margin: -5px 0 5px 5px;
@@ -355,12 +355,12 @@ form input[type="submit"]:hover {
 }
 #check-box label[for="showpwd"] {
   font-size: .8em;
-  color: gray;
+  color: #333;
   margin: 0 0 0 20px;
 }
 div#check-box input[type="checkbox"] {
   appearance: none;
-  border: 1.5px solid gray;
+  border: 1.5px solid #333;
   padding: 0px 3px 0 3px;
   border-radius: 50%;
   margin: 0 0 15px 2px;
@@ -370,7 +370,7 @@ div#check-box input[type="checkbox"]:checked {
   background-color: var(--color1);
 }
 form input[type="checkbox"]:after {
-  color: white;
+  color: #fff;
   content: '\2713';
 }
 form #redes-log ul {
@@ -398,7 +398,7 @@ form #redes-log a {
 }
 form #log-bt a {
   text-align: center;
-  padding: 12px 0 0 0;
+  padding: 15px 0 0 0;
   align-items: center;
   text-decoration: none;
   display: block;
@@ -408,12 +408,12 @@ form #log-bt a {
   border: 1.5px solid var(--color1);
   border-radius: 10px;
   background-color: var(--color1);
-  color: white;
+  color: #fff;
   cursor: pointer;
   transition-duration: .2s;
 }
 form #log-bt a:hover {
-  box-shadow: inset 0 55px 0 white;
+  box-shadow: inset 0 55px 0 #fff;
   color: var(--color1);
   border: 1.5px solid var(--color1);
   transition-duration: .2s;
@@ -424,7 +424,7 @@ form #log-bt {
 form #log-bt p {
   padding: 0 0 0 20px;
   text-align: center;
-  color: gray;
+  color: #999;
   font-size: .9em;
 }
 form #log-bt span {
@@ -455,14 +455,12 @@ main.politica-m hr {
  background-color: var(--color1);
 }
 body.politica-b {
-  background-color: whitesmoke;
+  background-color: #ddd;
 }
 main.politica-m {
   margin: 40px 0 90px 0;
-  border-top: 3px solid lightgray;
-  border-bottom: 3px solid lightgray;
-  border-radius: 30px;
-  background-color: white;
+  border-radius: 10px;
+  background-color: #fff;
   padding: 30px;
 }
 main.politica-m h1 {
@@ -494,14 +492,14 @@ main.politica-m ol {
 #data {
   padding-left: 20px;
   font-size: .9em;
-  color: gray;
+  color: #333;
 }
 /* Cursos */
 div.cursos {
   margin: 20px 20px 80px 20px;
   padding: 10px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #fff;
   box-shadow: 0px 5px 5px #00000033;
 }
 div.cursos h1 {
@@ -532,7 +530,7 @@ div.cursos li:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #fff;
   background-color: var(--color1);
   border: none;
   border-radius: 10px;
@@ -558,7 +556,7 @@ div.cursos li:before {
 }
 .about h1 {
   font-family: 'Geo', helvetica, sans-serif;
-  color: white;
+  color: #fff;
   margin-top: -120px;
   font-size: 2.4em;
 }
